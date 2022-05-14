@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="img/logo.png">
+    <title>Simon Dice</title>
+</head>
+<body>
+
+    <div class="gameboard">
+        <div id="celeste" class="color celeste left" data-color="celeste"></div>
+        <div id="violeta" class="color violeta right" data-color="violeta"></div>
+        <div id="naranja" class="color naranja left" data-color="naranja"></div>
+        <div id="verde" class="color verde right" data-color="verde"></div>
+        <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Empezar a jugar!</button>
+    </div>
+    <script src="funciones.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>escribir_nombre(nombre)</script>
+
+    <p class="rin">Hola, <script>escribir_nombre(nombre)</script>. Bienvenido a el juego Simon Dice!</p>
+
+    <section class="cuadro1">
+            <h2 style="color: black;">Simon Dice!</h2>
+                <h3>Instrucciones:</h3>
+                <p>1. Mantente alerta a la secuencia de colores que se iluminan.</p>
+                <p>2. Sigue el orden de la secuencia de los colores dando click y asi podras avanzar al siguiente nivel.</p>
+                <p>Puedes intentarlo todas la veces que desees, Buena Suerta :D</p>
+                <img src="img/img1.png" alt="imagen niño">
+    </section>
+
+    <section class="puntos">
+        <h2>Tabla de Puntaje</h2>
+        <p>Puntaje obtenido:</p><p id="puntaj"></p>
+        <p>Nivel:</p><p id="nvl"></p>
+    </section>
+ 
+</body>
+</html>
